@@ -27,13 +27,14 @@ Las burbujas son marcadores flotantes que puedes personalizar con enlaces a tus 
 
 ### Añadir Burbujas
 
-Puedes crear nuevas burbujas utilizando la ventana de añadir burbuja. Haz clic en el botón "+" para abrir la ventana, donde podrás ingresar el nombre, el enlace, el color y la imagen de la burbuja. Las burbujas se guardan en el almacenamiento local del navegador, por lo que se mantendrán incluso después de cerrar y volver a abrir el navegador.
+Puedes crear nuevas burbujas utilizando la ventana de añadir burbuja. Haz clic en el botón "+" para abrir la ventana, donde podrás ingresar el nombre, el enlace, el color y la imagen de la burbuja. Las burbujas se guardan en el almacenamiento local del navegador, por lo que se mantendrán incluso después de cerrar y volver a abrir el navegador. 
 
 ![2025-02-18-235929_hyprshot](https://github.com/user-attachments/assets/4957b466-715f-4fb5-9cde-b88a40cdde48)
 
 
 ![2025-02-19-000013_hyprshot](https://github.com/user-attachments/assets/467fb764-eaf0-46a2-a9d6-cb7aaf953203)
 
+<sup><sup style="color: grey;">Las imagenes utilizadas como fondo de pantalla tienen derechos de autor. Han sido utilizadas solo como ejemplo.</sup></sup>
 
 ### Borrar Burbujas
 
@@ -65,5 +66,17 @@ Las burbujas se distribuyen aleatoriamente en la pantalla cuando se crean, lo qu
 
 La página de inicio incluye animaciones eficientes para las burbujas y otros elementos. Puedes activar o desactivar las animaciones utilizando el botón de pausa/continuar animaciones. Cuando las animaciones están desactivadas, las burbujas flotantes se ocultan y las animaciones de las burbujas se pausan.
 
+## Versión Móvil 
+
+### Redimensionable
+
+Para adaptar el uso de esta página de inicio a todos los dispositivos, también se ha adaptado para dispositivos móviles con tamaños de ventana más pequeños. Se han mantenido las funciones originales, a excepción del reloj, y mejorado otras. A continuación dejo un video con el funcionamiento.
+
+https://github.com/user-attachments/assets/00d3c3b0-b7b2-418b-bdfd-c8875f7f6521
+
+## Errores conocidos
+
+> [!IMPORTANT]  
+> Algunas extensiones del navegador que modifiquen el color o brillo de la pantalla (ej. Dark Reader) pueden hacer que no se visualicen correctamente los fondos de pantalla. Prueba de añadir esta página a las excepciones para evitar problemas al cambiar de fondos.
 
 <sup><sup style="color: grey;">by Roger García Doncel</sup></sup>
