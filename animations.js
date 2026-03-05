@@ -116,6 +116,19 @@ function initializeBubbles() {
             }
         ];
         localStorage.setItem('bubbles', JSON.stringify(initialBubbles)); // Guarda las burbujas iniciales en el almacenamiento local
+    } else {
+        // Migra rutas antiguas (sin prefijo assets/logos/) al nuevo formato
+        const bubbles = JSON.parse(localStorage.getItem('bubbles'));
+        let migrated = false;
+        bubbles.forEach(bubble => {
+            if (bubble.image && !bubble.image.startsWith('assets/') && !bubble.image.startsWith('data:')) {
+                bubble.image = 'assets/logos/' + bubble.image;
+                migrated = true;
+            }
+        });
+        if (migrated) {
+            localStorage.setItem('bubbles', JSON.stringify(bubbles));
+        }
     }
 }
 
