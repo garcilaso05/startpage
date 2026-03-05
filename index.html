@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="dolphin.png" type="image/x-icon">
+    <link rel="icon" href="assets/logos/dolphin.png" type="image/x-icon">
     <meta name="theme-color" content="#808080"> <!-- Set the theme color to gray -->
 </head>
 <body>
@@ -39,23 +39,23 @@
     </div>
     <!-- Botón de reinicio -->
     <button id="reset-button" onclick="resetBubbles()">
-        <img src="actualizar.png" alt="Reset">
+        <img src="assets/buttons/actualizar.png" alt="Reset">
     </button>
     <!-- Botón para pausar/continuar animaciones -->
     <button id="toggle-animations-button" onclick="toggleAnimations()">
-        <img src="pausar.png" alt="Toggle Animations">
+        <img src="assets/buttons/pausar.png" alt="Toggle Animations">
     </button>
     <!-- Botón para cambiar el fondo -->
     <button id="change-background-button" onclick="changeBackground()">
-        <img src="galeria.png" alt="Change Background">
+        <img src="assets/buttons/galeria.png" alt="Change Background">
     </button>
     <!-- Botón para añadir una burbuja -->
     <button id="add-bubble-button" onclick="openAddBubbleWindow()">
-        <img src="mas.png" alt="Add Bubble">
+        <img src="assets/buttons/mas.png" alt="Add Bubble">
     </button>
     <!-- Botón para reiniciar las burbujas -->
     <button id="resetBubbles" onclick="initBubble()">
-        <img src="aleatorio.png" alt="Restart">
+        <img src="assets/buttons/aleatorio.png" alt="Restart">
     </button>
     <!-- Input para subir una imagen de fondo -->
     <input type="file" id="backgroundImageInput" accept="image/*" style="display: none;" onchange="uploadBackground()">
@@ -67,15 +67,15 @@
         <input type="color" id="bubbleColor" value="#ff0000">
         <input type="file" id="bubbleImage" accept="image/*">
         <button class="round-button" onclick="addBubble()">
-            <img src="mas.png" alt="Add Bubble">
+            <img src="assets/buttons/mas.png" alt="Add Bubble">
         </button>
     </div>
     <!-- Scripts de animaciones y reloj -->
     <script src="animations.js"></script>
     <script src="clock.js"></script>
     <script>
-        const backgrounds = ['fondo1.jpg', 'fondo2.jpg', 'fondo3.png', 'fondo4.png', 'fondo5.jpg'];
-        const backgroundsMobil = ['fondoM1.jpg', 'fondoM2.jpg', 'fondoM3.jpg', 'fondoM4.jpg', 'fondoM5.jpg'];
+        const backgrounds = ['assets/backgrounds/fondo1.jpg', 'assets/backgrounds/fondo2.jpg', 'assets/backgrounds/fondo3.png', 'assets/backgrounds/fondo4.png', 'assets/backgrounds/fondo5.jpg'];
+        const backgroundsMobil = ['assets/backgrounds/fondoM1.jpg', 'assets/backgrounds/fondoM2.jpg', 'assets/backgrounds/fondoM3.jpg', 'assets/backgrounds/fondoM4.jpg', 'assets/backgrounds/fondoM5.jpg'];
 
         function preloadImages(images) {
             images.forEach(image => {
@@ -93,7 +93,7 @@
 
         function loadInitialBackground(isMobile) {
             if (isMobile) {
-                document.body.style.backgroundImage = `url('fondoM1.jpg')`;
+                document.body.style.backgroundImage = `url('assets/backgrounds/fondoM1.jpg')`;
             } else {
                 document.body.style.backgroundImage = `url('${backgrounds[0]}')`;
             }

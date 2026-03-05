@@ -7,7 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('fondo1.jpg') no-repeat center center/cover; /* Fondo inicial */
+    background: url('assets/backgrounds/fondo1.jpg') no-repeat center center/cover; /* Fondo inicial */
     overflow: hidden;
     position: relative;
     touch-action: none; /* Desactiva el comportamiento de arrastre por defecto en dispositivos táctiles */
@@ -52,7 +52,7 @@ input {
 .icon {
     width: 24px;
     height: 24px;
-    background: url('lupa.png') no-repeat center center; /* Icono de búsqueda */
+    background: url('assets/logos/lupa.png') no-repeat center center; /* Icono de búsqueda */
     background-size: contain;
     cursor: pointer;
 }
@@ -250,7 +250,7 @@ input {
 
 .floating-bubble {
     position: absolute;
-    background: url('bubble.png') no-repeat center center;
+    background: url('assets/logos/bubble.png') no-repeat center center;
     background-size: contain;
     animation: float-up 3s ease-in-out forwards; /* Aumenta la duración a 3s */
 }

@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 let animationsEnabled = true; // Variable para controlar si las animaciones están habilitadas
 let bubbleInterval; // Intervalo para emitir burbujas
-const backgrounds = ['fondo1.jpg', 'fondo2.jpg', 'fondo3.jpg', 'fondo4.jpg', 'fondo5.jpg']; // Lista de fondos disponibles
-const backgroundsMobil = ['fondoM1.jpg', 'fondoM2.jpg', 'fondoM3.jpg', 'fondoM4.jpg', 'fondoM5.jpg']; // Lista de fondos disponibles para mobiles.
+const backgrounds = ['assets/backgrounds/fondo1.jpg', 'assets/backgrounds/fondo2.jpg', 'assets/backgrounds/fondo3.jpg', 'assets/backgrounds/fondo4.jpg', 'assets/backgrounds/fondo5.jpg']; // Lista de fondos disponibles
+const backgroundsMobil = ['assets/backgrounds/fondoM1.jpg', 'assets/backgrounds/fondoM2.jpg', 'assets/backgrounds/fondoM3.jpg', 'assets/backgrounds/fondoM4.jpg', 'assets/backgrounds/fondoM5.jpg']; // Lista de fondos disponibles para mobiles.
 let currentBackgroundIndex = 0; // Variable para llevar el seguimiento del fondo actual
 
 function initializeBubbles() {
@@ -34,85 +34,85 @@ function initializeBubbles() {
                 "name": "YouTube",
                 "backgroundColor": "hsl(0, 70%, 80%)",
                 "link": "https://www.youtube.com/",
-                "image": "youtube.png"
+                "image": "assets/logos/youtube.png"
             },
             {
                 "name": "WhatsApp",
                 "backgroundColor": "hsl(120, 70%, 80%)",
                 "link": "https://web.whatsapp.com/",
-                "image": "whatsapp.png"
+                "image": "assets/logos/whatsapp.png"
             },
             {
                 "name": "Gmail",
                 "backgroundColor": "hsl(240, 70%, 80%)",
                 "link": "https://mail.google.com/",
-                "image": "gmail.png"
+                "image": "assets/logos/gmail.png"
             },
             {
                 "name": "Google Drive",
                 "backgroundColor": "hsl(60, 70%, 80%)",
                 "link": "https://drive.google.com/drive/home",
-                "image": "drive.png"
+                "image": "assets/logos/drive.png"
             },
             {
                 "name": "Copilot",
                 "backgroundColor": "hsl(300, 70%, 80%)",
                 "link": "https://copilot.microsoft.com/",
-                "image": "copilot.png"
+                "image": "assets/logos/copilot.png"
             },
             {
                 "name": "GitHub",
                 "backgroundColor": "hsl(30, 70%, 80%)",
                 "link": "https://github.com/garcilaso05",
-                "image": "github.png"
+                "image": "assets/logos/github.png"
             },
             {
                 "name": "Spotify",
                 "backgroundColor": "hsl(90, 70%, 80%)",
                 "link": "https://open.spotify.com/",
-                "image": "spotify.png"
+                "image": "assets/logos/spotify.png"
             },
             {
                 "name": "ChatGPT",
                 "backgroundColor": "hsl(150, 70%, 80%)",
                 "link": "https://chatgpt.com/",
-                "image": "chatgpt.png"
+                "image": "assets/logos/chatgpt.png"
             },
             {
                 "name": "OneDrive",
                 "backgroundColor": "hsl(210, 70%, 80%)",
                 "link": "https://rovira-my.sharepoint.com/",
-                "image": "onedrive.png"
+                "image": "assets/logos/onedrive.png"
             },
             {
                 "name": "Deepl",
                 "backgroundColor": "hsl(182, 37.80%, 64.70%)",
                 "link": "https://www.deepl.com/es/translator",
-                "image": "deepl.png"
+                "image": "assets/logos/deepl.png"
             },
             {
                 "name": "SoftCatala",
                 "backgroundColor": "hsl(327, 69.20%, 87.30%)",
                 "link": "https://www.softcatala.org/corrector/",
-                "image": "softcatala.png"
+                "image": "assets/logos/softcatala.png"
             },
             {
                 "name": "Campus Virtual URV",
                 "backgroundColor": "hsl(45, 70%, 80%)",
                 "link": "https://campusvirtual.urv.cat/my/",
-                "image": "moodle.png"
+                "image": "assets/logos/moodle.png"
             },
             {
                 "name": "Outlook",
                 "backgroundColor": "hsl(75, 70%, 80%)",
                 "link": "https://outlook.office.com/mail/",
-                "image": "outlook.png"
+                "image": "assets/logos/outlook.png"
             },
             {
                 "name": "Linkedin",
                 "backgroundColor": "hsl(195, 70%, 80%)",
                 "link": "https://www.linkedin.com/feed/",
-                "image": "linkedin.png"
+                "image": "assets/logos/linkedin.png"
             }
         ];
         localStorage.setItem('bubbles', JSON.stringify(initialBubbles)); // Guarda las burbujas iniciales en el almacenamiento local
@@ -525,20 +525,20 @@ function saveBubble(name, link, color, imagePath) {
 }
 
 function initBubble() {
-    saveBubble("YouTube", "https://www.youtube.com/", "hsl(0, 70%, 80%)", "youtube.png");
-    saveBubble("WhatsApp", "https://web.whatsapp.com/", "hsl(120, 70%, 80%)", "whatsapp.png");
-    saveBubble("Gmail", "https://mail.google.com/", "hsl(240, 70%, 80%)", "gmail.png");
-    saveBubble("Google Drive", "https://drive.google.com/drive/home", "hsl(60, 70%, 80%)", "drive.png");
-    saveBubble("Copilot", "https://copilot.microsoft.com/", "hsl(300, 70%, 80%)", "copilot.png");
-    saveBubble("GitHub", "https://github.com/garcilaso05", "hsl(30, 70%, 80%)", "github.png");
-    saveBubble("Spotify", "https://open.spotify.com/", "hsl(90, 70%, 80%)", "spotify.png");
-    saveBubble("ChatGPT", "https://chatgpt.com/", "hsl(150, 70%, 80%)", "chatgpt.png");
-    saveBubble("OneDrive", "https://rovira-my.sharepoint.com/", "hsl(210, 70%, 80%)", "onedrive.png");
-    saveBubble("Deepl", "https://www.deepl.com/es/translator", "hsl(182, 37.80%, 64.70%)", "deepl.png");
-    saveBubble("SoftCatala", "https://www.softcatala.org/corrector/", "hsl(327, 69.20%, 87.30%)", "softcatala.png");
-    saveBubble("Campus Virtual URV", "https://campusvirtual.urv.cat/my/", "hsl(45, 70%, 80%)", "moodle.png");
-    saveBubble("Outlook", "https://outlook.office.com/mail/", "hsl(75, 70%, 80%)", "outlook.png");
-    saveBubble("Linkedin", "https://www.linkedin.com/feed/", "hsl(195, 70%, 80%)", "linkedin.png");
+    saveBubble("YouTube", "https://www.youtube.com/", "hsl(0, 70%, 80%)", "assets/logos/youtube.png");
+    saveBubble("WhatsApp", "https://web.whatsapp.com/", "hsl(120, 70%, 80%)", "assets/logos/whatsapp.png");
+    saveBubble("Gmail", "https://mail.google.com/", "hsl(240, 70%, 80%)", "assets/logos/gmail.png");
+    saveBubble("Google Drive", "https://drive.google.com/drive/home", "hsl(60, 70%, 80%)", "assets/logos/drive.png");
+    saveBubble("Copilot", "https://copilot.microsoft.com/", "hsl(300, 70%, 80%)", "assets/logos/copilot.png");
+    saveBubble("GitHub", "https://github.com/garcilaso05", "hsl(30, 70%, 80%)", "assets/logos/github.png");
+    saveBubble("Spotify", "https://open.spotify.com/", "hsl(90, 70%, 80%)", "assets/logos/spotify.png");
+    saveBubble("ChatGPT", "https://chatgpt.com/", "hsl(150, 70%, 80%)", "assets/logos/chatgpt.png");
+    saveBubble("OneDrive", "https://rovira-my.sharepoint.com/", "hsl(210, 70%, 80%)", "assets/logos/onedrive.png");
+    saveBubble("Deepl", "https://www.deepl.com/es/translator", "hsl(182, 37.80%, 64.70%)", "assets/logos/deepl.png");
+    saveBubble("SoftCatala", "https://www.softcatala.org/corrector/", "hsl(327, 69.20%, 87.30%)", "assets/logos/softcatala.png");
+    saveBubble("Campus Virtual URV", "https://campusvirtual.urv.cat/my/", "hsl(45, 70%, 80%)", "assets/logos/moodle.png");
+    saveBubble("Outlook", "https://outlook.office.com/mail/", "hsl(75, 70%, 80%)", "assets/logos/outlook.png");
+    saveBubble("Linkedin", "https://www.linkedin.com/feed/", "hsl(195, 70%, 80%)", "assets/logos/linkedin.png");
 }
 
 function search() {
